@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ServiceComponentCustomers from './components/ServiceComponentCustomers';
+import ComponentServiceSuppliers from './components/ComponentServiceSuppliers';
+import EmpleadosDepartamentos from './components/EmpleadosDepartamentos';
+import EmpleadosOficios from './components/EmpleadosOficios';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    // <ServiceComponentCustomers />
+    //<ComponentServiceSuppliers />
+    //<EmpleadosDepartamentos />
+    <EmpleadosOficios />
+    // Si hace dos peticiones quitar etiqueta y dejar solo el component, pero la etiqueta
+    // de reactStrictMode la quitamos
 );
 
 // If you want to start measuring performance in your app, pass a function
